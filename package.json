@@ -1,0 +1,28 @@
+{
+  "name": "patternfly-ds",
+  "version": "1.0.0",
+  "description": "Patternfly styles",
+  "homepage": "https://github.com/cofo-rerades/patternfly-ds#readme",
+  "bugs": {
+    "url": "https://github.com/cofo-rerades/patternfly-ds/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cofo-rerades/patternfly-ds.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "css:layout": "sass --no-source-map src/layout.scss dist/layout.css",
+    "css:utilities": "sass --no-source-map src/utilities.scss dist/utilities.css",
+    "css:base": "sass --no-source-map src/base.scss dist/base.css",
+    "css": "npm run css:layout && npm run css:utilities && npm run css:base",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@patternfly/patternfly": "^6.1.0",
+    "sass": "^1.86.0"
+  }
+}
