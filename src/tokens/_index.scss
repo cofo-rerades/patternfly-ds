@@ -1,0 +1,20 @@
+@use "../../node_modules/@patternfly/patternfly/sass-utilities" as *;
+@use "./ib-tokens-palette" as palette;
+@use "./ib-tokens-default" as default;
+@use "./ib-tokens-dark" as dark;
+@use "./ib-tokens-local" as local;
+
+:root {
+  @include pf-v6-set-inverse(false);
+  @include palette.pf-v6-tokens;
+  @include default.pf-v6-tokens;
+  @include local.pf-v6-tokens;
+}
+
+:root:where(.pf-v6-theme-dark) {
+  @include dark.pf-v6-tokens;
+}
+
+@include pf-v6-rtl {
+  @include pf-v6-set-inverse;
+}

@@ -1,8 +1,10 @@
 @use "../node_modules/@patternfly/patternfly/base/reset";
 @use "../node_modules/@patternfly/patternfly/base/normalize";
 @use "../node_modules/@patternfly/patternfly/base/patternfly-common";
-// @forward "./patternfly-fonts";
-// @forward "./patternfly-fa-icons";
-// @forward "./patternfly-pf-icons";
-// @forward "./patternfly-svg-icons";
-@use "../node_modules/@patternfly/patternfly/base/patternfly-variables";
+// @use "../node_modules/@patternfly/patternfly/base/patternfly-fonts";
+// @use "../node_modules/@patternfly/patternfly/base/patternfly-fa-icons";
+// @use "../node_modules/@patternfly/patternfly/base/patternfly-pf-icons";
+@use "../node_modules/@patternfly/patternfly/base/patternfly-svg-icons";
+
+// @use "../node_modules/@patternfly/patternfly/base/patternfly-variables";
+@use "./tokens";
